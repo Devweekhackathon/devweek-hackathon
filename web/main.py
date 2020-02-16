@@ -1,6 +1,8 @@
 from flask import Flask, send_file, send_from_directory, request, jsonify
+from flask_cors import CORS
 from .geo.gems import compute_gems
 app = Flask(__name__)
+cors = CORS(app)
 
 
 @app.route('/')
