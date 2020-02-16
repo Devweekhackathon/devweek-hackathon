@@ -24,5 +24,3 @@ def compute_gems(points, num_gems):
         gems.append(gem_pos)
 
     return gems
-
-

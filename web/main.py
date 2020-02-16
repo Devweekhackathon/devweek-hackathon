@@ -9,7 +9,8 @@ cors = CORS(app)
 def hello_world():
     return send_file('./index.html', 'text/html')
     
-    
+
+# Pick locations for gems along path
 @app.route('/gems/<num_gems>', methods=['POST'])
 def gems(num_gems):
     return jsonify({
