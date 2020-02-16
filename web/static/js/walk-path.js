@@ -21,7 +21,7 @@ function setupActor(actorID, linePoints, gemLocations, duration, refreshInterval
 		const interval = setInterval(function() {
 			// Stop interval after race
 			currentStep ++;
-			if (currentStep > numSteps) {
+			if (position > 1) {
 				clearInterval(interval);
 				return;
 			}
