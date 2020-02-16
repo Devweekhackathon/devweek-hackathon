@@ -4,7 +4,7 @@ import random
 def compute_gems(points, num_gems):
     gems = []
     # For each requested gem, fetch a pair of adjacent points from points list and place a gem randomly between them
-    for _ in range(num_gems):
+    for _ in range(int(num_gems)):
         # Find two points between which to place the gem
         start_index = random.randrange(len(points)-1)
         start = points[start_index]
