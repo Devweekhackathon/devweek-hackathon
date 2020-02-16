@@ -12,12 +12,6 @@ def fish():
     return 'You are on the fish endpoint'
 
 
-@app.route('/static/js/<path:path>')
-def send_js(path):
-    return send_from_directory('static/js', path)
-
-
-@app.route('/static/css/<path:path>')
-def send_css(path):
-    print(path)
-    return send_from_directory('static/css', path)
+@app.route('/static/<path:path>')
+def serve_static(path):
+    return send_from_directory('static', path)
