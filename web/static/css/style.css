@@ -4,6 +4,10 @@
 #form {
     margin-top: 10px;
 }
+#lyft-button {
+    margin-left: 50px;
+}
+
 .icon {
     background-size: cover;
     height: 30px;
