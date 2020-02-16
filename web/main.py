@@ -14,9 +14,10 @@ def fish():
 
 @app.route('/static/js/<path:path>')
 def send_js(path):
-    return send_from_directory('js', path)
+    return send_from_directory('static/js', path)
 
 
 @app.route('/static/css/<path:path>')
 def send_css(path):
-    return send_from_directory('css', path)
+    print(path)
+    return send_from_directory('static/css', path)
